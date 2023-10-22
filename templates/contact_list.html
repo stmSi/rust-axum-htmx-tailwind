@@ -1,0 +1,14 @@
+<table class="table-auto caption-top border-collapse border border-slate-500">
+  <thead class="bg-slate-800 text-white">
+  <tr>
+    <th class="border border-slate-600">ID</th>
+    <th class="border border-slate-600">Name</th>
+    <th class="border border-slate-600">Email</th>
+    </tr>
+  </thead>
+  <tbody class="bg-slate-100">
+  {% for contact in contacts %}
+    {% include "contact_single_row.html" %}
+  {% endfor %}
+  </tbody>
+</table>

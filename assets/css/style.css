@@ -1,0 +1,19 @@
+.custom-btn {
+    background-color: #3498db; /* Default background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 1px; /* Rounded corners */
+    font-weight: bold; /* Bold font */
+    transition: background-color 0.3s ease; /* Smooth transition effect for hover */
+}
+
+.custom-btn:hover {
+    background-color: #2980b9; /* Darker shade for hover state */
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    margin: 10px 0;
+}

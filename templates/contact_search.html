@@ -1,0 +1,12 @@
+<form>
+  <label for="Search">Search Contacts</label>
+  <input id="search" name="q" type="text" placeholder="Search Contacts">
+  <button 
+    class="custom-btn"
+    hx-post="/contacts/search" 
+    hx-target="#search-main" 
+    hx-swap="innerHTML">
+    Search
+  </button>
+</form>
+<div id="search-main"></div>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+  {% block content %}
+
+    {% include "contact_form.html" %}
+
+    <button 
+      class="custom-btn"
+      hx-get="/contacts" 
+      hx-target="#contacts-list" 
+      hx-trigger="click, keyup[ctrlKey && key == '0'] from:body"
+    >
+      Get Contacts
+    </button>
+    <div id="contacts-list" hx-get="/contacts" hx-trigger="contactAdded"></div>
+
+    {% include "contact_search.html" %}
+
+  {% endblock content %}
